@@ -1,0 +1,15 @@
+{
+  "name": "web-scrape",
+  "version": "1.0.0",
+  "description": "Command line tool for scraping website content.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xbilek18",
+  "license": "MIT",
+  "dependencies": {
+    "website-scraper": "^3.3.2",
+    "website-scraper-phantom": "^0.1.0"
+  }
+}
