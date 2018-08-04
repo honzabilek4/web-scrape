@@ -1,12 +1,13 @@
 var scrape = require('website-scraper');
 var options = {
-  urls: ['https://dnnz.cz/cs/'],
+  urls: ['https://ibodies.eu'],
   directory: __dirname + '/scrape',
   recursive: true,
-  maxRecursiveDepth: 2,
-  sources: [
-   {selector: 'img', attr: 'data-src' }
-  ],
+  maxRecursiveDepth: 4,
+  filenameGenerator: 'bySiteStructure',
+  urlFilter: function(url){
+    return url.indexOf('https://ibodies.eu') === 0;
+  },
   onResourceSaved: (resource) => {
     console.log(`Resource ${resource} was downloaded.`);
   },
